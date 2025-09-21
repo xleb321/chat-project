@@ -1,0 +1,95 @@
+.friends-list {
+  width: 250px;
+  background: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+  display: flex;
+  flex-direction: column;
+}
+
+.friends-header {
+  padding: 1rem;
+  border-bottom: 1px solid #dee2e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+
+.friends-header h3 {
+  margin: 0;
+  color: #333;
+}
+
+.add-friend-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.add-friend-btn:hover {
+  background: #0056b3;
+}
+
+.add-friend-form {
+  padding: 1rem;
+  border-bottom: 1px solid #dee2e6;
+  background: white;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.add-friend-form input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-friend-form button {
+  padding: 0.5rem 1rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-friend-form button:hover {
+  background: #218838;
+}
+
+.friends-container {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.friend-item {
+  padding: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+.friend-item:hover {
+  background: #e9ecef;
+}
+
+.friend-item.selected {
+  background: #007bff;
+  color: white;
+}
+
+.friend-username {
+  font-weight: 500;
+}
+
+.no-friends {
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #6c757d;
+}
